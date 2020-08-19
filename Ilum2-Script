@@ -1,0 +1,30 @@
+_G.AutoMineFarm = true; -- Change to false to stop mining (Execute without the lower part of script.)
+
+local LocalPlayer = game:GetService("Players").LocalPlayer
+
+while wait() do
+    if _G.AutoMineFarm then
+        pcall(function()
+
+            local ores = game:GetService("Workspace").Ores.Agrinium:GetChildren() -- Change Ore to what ever ur trying to get.
+
+            for i = 1, #ores do -- Faster Loop
+                local child = ores[i]
+
+                LocalPlayer.Character.HumanoidRootPart.CFrame = child.Rock.CFrame + Vector3.new(0, 10, 0)
+
+                for count = 1, 18 do
+                    -- Mining Laser Check
+                    local ToolOnPlayer = LocalPlayer.Character:FindFirstChildWhichIsA("BackpackItem")
+
+                    if ToolOnPlayer and ToolOnPlayer.Name == "Mining Laser" then
+                        game:GetService("ReplicatedStorage").Mine:InvokeServer(child, LocalPlayer.Character["Mining Laser"].Client.Settings)
+                    else
+                        LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):EquipTool(LocalPlayer.Backpack["Mining Laser"])
+                    end
+                end
+            end
+            
+        end)
+    end
+end
