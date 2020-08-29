@@ -1,0 +1,265 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local Header = Instance.new("Frame")
+local Guiname = Instance.new("TextLabel")
+local Creator = Instance.new("TextLabel")
+local _1StFrame = Instance.new("Frame")
+local MoreMS = Instance.new("TextButton")
+local MoreJp = Instance.new("TextButton")
+local NormalMs = Instance.new("TextButton")
+local NormalJp = Instance.new("TextButton")
+local Yard = Instance.new("TextButton")
+local PoliceOffice = Instance.new("TextButton")
+local Prison = Instance.new("TextButton")
+local CrimBase = Instance.new("TextButton")
+local FullHp = Instance.new("TextButton")
+local Reset = Instance.new("TextButton")
+local TpTool = Instance.new("TextButton")
+local Line = Instance.new("Frame")
+local Line_2 = Instance.new("Frame")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainFrame.Position = UDim2.new(0.256480217, 0, 0.387096763, 0)
+MainFrame.Size = UDim2.new(0, 386, 0, 223)
+MainFrame.Active = true
+MainFrame.Draggable = true
+
+Header.Name = "Header"
+Header.Parent = MainFrame
+Header.BackgroundColor3 = Color3.fromRGB(115, 115, 115)
+Header.BorderColor3 = Color3.fromRGB(115, 115, 115)
+Header.Size = UDim2.new(0, 386, 0, 27)
+
+Guiname.Name = "Guiname"
+Guiname.Parent = Header
+Guiname.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Guiname.BackgroundTransparency = 9.000
+Guiname.Position = UDim2.new(0.0284974128, 0, 0.0567129627, 0)
+Guiname.Size = UDim2.new(0, 200, 0, 25)
+Guiname.Font = Enum.Font.SourceSans
+Guiname.Text = "-=+Prison Life Gui+=-"
+Guiname.TextColor3 = Color3.fromRGB(0, 0, 0)
+Guiname.TextSize = 20.000
+
+Creator.Name = "Creator"
+Creator.Parent = Header
+Creator.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Creator.BackgroundTransparency = 9.000
+Creator.Position = UDim2.new(0.481865287, 0, 0.0196759254, 0)
+Creator.Size = UDim2.new(0, 200, 0, 25)
+Creator.Font = Enum.Font.SourceSans
+Creator.Text = "Credits: IceTea"
+Creator.TextColor3 = Color3.fromRGB(0, 0, 0)
+Creator.TextSize = 20.000
+
+_1StFrame.Name = "1StFrame"
+_1StFrame.Parent = MainFrame
+_1StFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1StFrame.BackgroundTransparency = 9.000
+_1StFrame.Position = UDim2.new(0, 0, 0.12345852, 0)
+_1StFrame.Size = UDim2.new(0, 386, 0, 195)
+
+MoreMS.Name = "MoreMS"
+MoreMS.Parent = _1StFrame
+MoreMS.BackgroundColor3 = Color3.fromRGB(46, 255, 0)
+MoreMS.BorderColor3 = Color3.fromRGB(255, 255, 255)
+MoreMS.Position = UDim2.new(0.0284974091, 0, 0.0526782125, 0)
+MoreMS.Size = UDim2.new(0, 168, 0, 29)
+MoreMS.Font = Enum.Font.SourceSans
+MoreMS.Text = "100 Speed+"
+MoreMS.TextColor3 = Color3.fromRGB(0, 0, 0)
+MoreMS.TextSize = 20.000
+
+MoreJp.Name = "MoreJp"
+MoreJp.Parent = _1StFrame
+MoreJp.BackgroundColor3 = Color3.fromRGB(46, 255, 0)
+MoreJp.BorderColor3 = Color3.fromRGB(255, 255, 255)
+MoreJp.Position = UDim2.new(0.53367877, 0, 0.0526782125, 0)
+MoreJp.Size = UDim2.new(0, 168, 0, 29)
+MoreJp.Font = Enum.Font.SourceSans
+MoreJp.Text = "100 Jump+"
+MoreJp.TextColor3 = Color3.fromRGB(0, 0, 0)
+MoreJp.TextSize = 20.000
+
+NormalMs.Name = "NormalMs"
+NormalMs.Parent = _1StFrame
+NormalMs.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+NormalMs.BorderColor3 = Color3.fromRGB(255, 255, 255)
+NormalMs.Position = UDim2.new(0.0284974091, 0, 0.241159916, 0)
+NormalMs.Size = UDim2.new(0, 176, 0, 20)
+NormalMs.Font = Enum.Font.SourceSans
+NormalMs.Text = "Normal Speed"
+NormalMs.TextColor3 = Color3.fromRGB(0, 0, 0)
+NormalMs.TextSize = 20.000
+
+NormalJp.Name = "NormalJp"
+NormalJp.Parent = _1StFrame
+NormalJp.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+NormalJp.BorderColor3 = Color3.fromRGB(255, 255, 255)
+NormalJp.Position = UDim2.new(0.515385985, 0, 0.241159916, 0)
+NormalJp.Size = UDim2.new(0, 174, 0, 20)
+NormalJp.Font = Enum.Font.SourceSans
+NormalJp.Text = "NormalJump"
+NormalJp.TextColor3 = Color3.fromRGB(0, 0, 0)
+NormalJp.TextSize = 20.000
+
+Yard.Name = "Yard"
+Yard.Parent = _1StFrame
+Yard.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+Yard.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Yard.Position = UDim2.new(0.0284974091, 0, 0.421908975, 0)
+Yard.Size = UDim2.new(0, 176, 0, 21)
+Yard.Font = Enum.Font.SourceSans
+Yard.Text = "Yard"
+Yard.TextColor3 = Color3.fromRGB(0, 0, 0)
+Yard.TextSize = 30.000
+
+PoliceOffice.Name = "PoliceOffice"
+PoliceOffice.Parent = _1StFrame
+PoliceOffice.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+PoliceOffice.BorderColor3 = Color3.fromRGB(255, 255, 255)
+PoliceOffice.Position = UDim2.new(0.517976642, 0, 0.421908975, 0)
+PoliceOffice.Size = UDim2.new(0, 173, 0, 21)
+PoliceOffice.Font = Enum.Font.SourceSans
+PoliceOffice.Text = "Police Office"
+PoliceOffice.TextColor3 = Color3.fromRGB(0, 0, 0)
+PoliceOffice.TextSize = 30.000
+
+Prison.Name = "Prison"
+Prison.Parent = _1StFrame
+Prison.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+Prison.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Prison.Position = UDim2.new(0.0284974091, 0, 0.580883324, 0)
+Prison.Size = UDim2.new(0, 176, 0, 20)
+Prison.Font = Enum.Font.SourceSans
+Prison.Text = "Prison"
+Prison.TextColor3 = Color3.fromRGB(0, 0, 0)
+Prison.TextSize = 30.000
+
+CrimBase.Name = "CrimBase"
+CrimBase.Parent = _1StFrame
+CrimBase.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+CrimBase.BorderColor3 = Color3.fromRGB(255, 255, 255)
+CrimBase.Position = UDim2.new(0.515385985, 0, 0.586011529, 0)
+CrimBase.Size = UDim2.new(0, 174, 0, 19)
+CrimBase.Font = Enum.Font.SourceSans
+CrimBase.Text = "Criminal Base"
+CrimBase.TextColor3 = Color3.fromRGB(0, 0, 0)
+CrimBase.TextSize = 30.000
+
+FullHp.Name = "FullHp"
+FullHp.Parent = _1StFrame
+FullHp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FullHp.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FullHp.Position = UDim2.new(0.0284974091, 0, 0.852678359, 0)
+FullHp.Size = UDim2.new(0, 176, 0, 22)
+FullHp.Font = Enum.Font.SourceSans
+FullHp.Text = "Full Health"
+FullHp.TextColor3 = Color3.fromRGB(0, 0, 0)
+FullHp.TextSize = 35.000
+
+Reset.Name = "Reset"
+Reset.Parent = _1StFrame
+Reset.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Reset.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Reset.Position = UDim2.new(0.523316085, 0, 0.852678359, 0)
+Reset.Size = UDim2.new(0, 176, 0, 22)
+Reset.Font = Enum.Font.SourceSans
+Reset.Text = "Reset"
+Reset.TextColor3 = Color3.fromRGB(0, 0, 0)
+Reset.TextSize = 35.000
+
+TpTool.Name = "TpTool"
+TpTool.Parent = _1StFrame
+TpTool.BackgroundColor3 = Color3.fromRGB(165, 191, 194)
+TpTool.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TpTool.Position = UDim2.new(0.0284974091, 0, 0.719345033, 0)
+TpTool.Size = UDim2.new(0, 367, 0, 20)
+TpTool.Font = Enum.Font.SourceSans
+TpTool.Text = "Teleport Tool"
+TpTool.TextColor3 = Color3.fromRGB(0, 0, 0)
+TpTool.TextSize = 30.000
+
+Line.Name = "Line"
+Line.Parent = MainFrame
+Line.BackgroundColor3 = Color3.fromRGB(89, 183, 255)
+Line.BorderColor3 = Color3.fromRGB(89, 183, 255)
+Line.Size = UDim2.new(0, 386, 0, 0)
+
+Line_2.Name = "Line"
+Line_2.Parent = MainFrame
+Line_2.BackgroundColor3 = Color3.fromRGB(89, 183, 255)
+Line_2.BorderColor3 = Color3.fromRGB(89, 183, 255)
+Line_2.Position = UDim2.new(0, 0, 1, 0)
+Line_2.Size = UDim2.new(0, 386, 0, 0)
+
+-- <<Scripts>> --
+
+Yard.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(794, 98, 2521))
+end)
+
+Prison.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(915, 99, 2368))
+end)
+
+CrimBase.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(948, 94, 2064))
+end)
+
+PoliceOffice.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(837, 99, 2313))
+end)
+
+MoreMS.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+end)
+
+MoreJp.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+end)
+
+NormalJp.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 30
+end)
+
+NormalMs.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
+end)
+
+FullHp.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.Health = 100
+end)
+
+Reset.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end)
+
+TpTool.MouseButton1Down:Connect(function()
+	local plr = game:GetService("Players").LocalPlayer
+	local mouse = plr:GetMouse()
+	
+	local tool = Instance.new("Tool")
+	tool.RequiresHandle = false
+	tool.Name = "Click Teleport"
+	
+	tool.Activated:Connect(function()
+		local root = plr.Character.HumanoidRootPart
+		local pos = mouse.Hit.Position+Vector3.new(0,2.5,0)
+		local offset = pos-root.Position
+		root.CFrame = root.CFrame+offset
+	end)
+	
+	tool.Parent = plr.Backpack
+end)
