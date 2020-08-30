@@ -1,0 +1,198 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local Header = Instance.new("Frame")
+local GuiName = Instance.new("TextLabel")
+local Credits = Instance.new("TextLabel")
+local _1stFrame = Instance.new("Frame")
+local MoneyButton = Instance.new("TextButton")
+local Speed = Instance.new("TextButton")
+local NormalS = Instance.new("TextButton")
+local NormalJ = Instance.new("TextButton")
+local Jump = Instance.new("TextButton")
+local TpTool = Instance.new("TextButton")
+local Reset = Instance.new("TextButton")
+local FullHp = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+MainFrame.Position = UDim2.new(0.256480217, 0, 0.377609104, 0)
+MainFrame.Size = UDim2.new(0, 356, 0, 196)
+MainFrame.Active = true
+MainFrame.Draggable = true
+
+Header.Name = "Header"
+Header.Parent = MainFrame
+Header.BackgroundColor3 = Color3.fromRGB(134, 134, 134)
+Header.Size = UDim2.new(0, 356, 0, 26)
+
+GuiName.Name = "GuiName"
+GuiName.Parent = Header
+GuiName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GuiName.BackgroundTransparency = 9.000
+GuiName.Position = UDim2.new(0.0505617969, 0, 0, 0)
+GuiName.Size = UDim2.new(0, 161, 0, 26)
+GuiName.Font = Enum.Font.SourceSans
+GuiName.Text = "Viking Simulator Gui"
+GuiName.TextColor3 = Color3.fromRGB(0, 0, 0)
+GuiName.TextSize = 20.000
+
+Credits.Name = "Credits"
+Credits.Parent = Header
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 9.000
+Credits.Position = UDim2.new(0.502808988, 0, 0, 0)
+Credits.Size = UDim2.new(0, 161, 0, 26)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Credits: IceTea"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextSize = 20.000
+
+_1stFrame.Name = "1stFrame"
+_1stFrame.Parent = MainFrame
+_1stFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1stFrame.BackgroundTransparency = 9.000
+_1stFrame.Position = UDim2.new(0, 0, 0.132653058, 0)
+_1stFrame.Size = UDim2.new(0, 356, 0, 170)
+
+MoneyButton.Name = "MoneyButton"
+MoneyButton.Parent = _1stFrame
+MoneyButton.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+MoneyButton.Position = UDim2.new(0.0252808984, 0, 0.052941177, 0)
+MoneyButton.Size = UDim2.new(0, 331, 0, 28)
+MoneyButton.Font = Enum.Font.SourceSans
+MoneyButton.Text = "Inf Money"
+MoneyButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MoneyButton.TextSize = 35.000
+
+Speed.Name = "Speed+"
+Speed.Parent = _1stFrame
+Speed.BackgroundColor3 = Color3.fromRGB(12, 255, 0)
+Speed.Position = UDim2.new(0.0252808984, 0, 0.282352954, 0)
+Speed.Size = UDim2.new(0, 163, 0, 22)
+Speed.Font = Enum.Font.SourceSans
+Speed.Text = "Speed+"
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextSize = 25.000
+
+NormalS.Name = "NormalS"
+NormalS.Parent = _1stFrame
+NormalS.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+NormalS.Position = UDim2.new(0.519662917, 0, 0.282352954, 0)
+NormalS.Size = UDim2.new(0, 155, 0, 22)
+NormalS.Font = Enum.Font.SourceSans
+NormalS.Text = "Normal Speed"
+NormalS.TextColor3 = Color3.fromRGB(0, 0, 0)
+NormalS.TextSize = 25.000
+
+NormalJ.Name = "NormalJ"
+NormalJ.Parent = _1stFrame
+NormalJ.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+NormalJ.Position = UDim2.new(0.519662917, 0, 0.458823562, 0)
+NormalJ.Size = UDim2.new(0, 155, 0, 22)
+NormalJ.Font = Enum.Font.SourceSans
+NormalJ.Text = "Normal Jump"
+NormalJ.TextColor3 = Color3.fromRGB(0, 0, 0)
+NormalJ.TextSize = 25.000
+
+Jump.Name = "Jump+"
+Jump.Parent = _1stFrame
+Jump.BackgroundColor3 = Color3.fromRGB(46, 255, 0)
+Jump.Position = UDim2.new(0.0252808984, 0, 0.458823562, 0)
+Jump.Size = UDim2.new(0, 163, 0, 22)
+Jump.Font = Enum.Font.SourceSans
+Jump.Text = "Jump+"
+Jump.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jump.TextSize = 25.000
+
+TpTool.Name = "TpTool"
+TpTool.Parent = _1stFrame
+TpTool.BackgroundColor3 = Color3.fromRGB(189, 236, 255)
+TpTool.Position = UDim2.new(0.0337078646, 0, 0.641176462, 0)
+TpTool.Size = UDim2.new(0, 331, 0, 30)
+TpTool.Font = Enum.Font.SourceSans
+TpTool.Text = "Teleport Tool"
+TpTool.TextColor3 = Color3.fromRGB(0, 0, 0)
+TpTool.TextSize = 35.000
+
+Reset.Name = "Reset"
+Reset.Parent = _1stFrame
+Reset.BackgroundColor3 = Color3.fromRGB(134, 134, 97)
+Reset.Position = UDim2.new(0.0365168527, 0, 0.852941155, 0)
+Reset.Size = UDim2.new(0, 159, 0, 19)
+Reset.Font = Enum.Font.SourceSans
+Reset.Text = "Reset"
+Reset.TextColor3 = Color3.fromRGB(0, 0, 0)
+Reset.TextSize = 25.000
+
+FullHp.Name = "FullHp"
+FullHp.Parent = _1stFrame
+FullHp.BackgroundColor3 = Color3.fromRGB(255, 255, 148)
+FullHp.Position = UDim2.new(0.519662917, 0, 0.852941155, 0)
+FullHp.Size = UDim2.new(0, 160, 0, 19)
+FullHp.Font = Enum.Font.SourceSans
+FullHp.Text = "Full HP"
+FullHp.TextColor3 = Color3.fromRGB(0, 0, 0)
+FullHp.TextSize = 25.000
+
+--<< Scripts >>--
+
+MoneyButton.MouseButton1Down:Connect(function()
+	while wait() do
+		for i,v in pairs(game.Workspace.Coins:GetChildren())do
+			v.CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+	end
+end)
+
+TpTool.MouseButton1Down:Connect(function()
+	local plr = game:GetService("Players").LocalPlayer
+	local mouse = plr:GetMouse()
+	
+	local tool = Instance.new("Tool")
+	tool.RequiresHandle = false
+	tool.Name = "Click Teleport"
+	
+	tool.Activated:Connect(function()
+		local root = plr.Character.HumanoidRootPart
+		local pos = mouse.Hit.Position+Vector3.new(0,2.5,0)
+		local offset = pos-root.Position
+		root.CFrame = root.CFrame+offset
+	end)
+	
+	tool.Parent = plr.Backpack
+end)
+
+NormalJ.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 30
+end)
+
+FullHp.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.Health = 100
+end)
+
+Speed.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 125
+end)
+
+NormalS.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
+end)
+
+Jump.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 125
+end)
+
+Reset.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end)
